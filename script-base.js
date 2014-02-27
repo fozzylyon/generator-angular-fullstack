@@ -29,7 +29,7 @@ var Generator = module.exports = function Generator() {
     try {
       this.env.options.testPath = require(path.join(process.cwd(), 'bower.json')).testPath;
     } catch (e) {}
-    this.env.options.testPath = this.env.options.testPath || 'test/spec';
+    this.env.options.testPath = this.env.options.testPath || 'test/app/spec';
   }
 
   this.env.options.coffee = this.options.coffee;
